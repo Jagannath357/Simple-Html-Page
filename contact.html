@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-color: rgb(255, 246, 152);
+        }
+        a{
+            text-decoration: none;
+            margin-left: 50px;
+            font-size: 30px;
+
+        }
+        nav{
+            margin-top: 30px;
+            /* display: flex;
+            justify-content: space-between; */
+        }
+        #contact{
+            margin-right: 60px;
+        }
+        /* .form-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        } */
+        form{
+            padding: 20px 15px 15px 15px;
+            font-size: 19px;
+
+            /* border: 2px solid black; */
+            /* box-shadow: 2px 2px 15px 5px gray; */
+            /* background-color: rgb(197, 254, 254); */
+            border-radius: 10px;
+        }
+        input, select{
+            height: 19px;
+        }
+        #confirm{
+            height: 15px;
+            width: 15px;
+        }
+        .back{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="web.html" target="_self">Home</a>
+        <a href="about.html" target="_self">About Us</a>
+        <a href="contact.html" target="_self" id="contact">Contact Us</a>
+    </nav>
+    <br>
+    <hr>
+    <br>
+    <div class="form-div">
+        <h2>Contact Us :</h2>
+        <form>
+            Name:- <input type="text" id="userName" name="userName" placeholder="Enter your username" required autocomplete="on" autofocus><br><br>
+            E-mail:- <input type="email" id="userMail" name="userMail" placeholder="Enter a valid email-id" required autocomplete="on" autofocus><br><br>
+            Gender:-
+            <input type="radio" value="male" name="gender" checked>Male
+            <input type="radio" value="female" name="gender">Female
+            <br><br>
+            DOB:- <input type="date" min="1970-01-01" max="2025-12-31" required><br><br>
+
+            Phone:- <input type="tel" id="phone" name="phone" maxlength="10" pattern="0-9" required><br><br>
+
+            Address:- <br>
+            <textarea name="address" id="address" placeholder="Write your Address/Landmark" rows="4" cols="20" wrap="hard"></textarea><br><br>
+
+            Choose your subject:- <select name="subject" id="subject" required>
+                <optgroup label="Semister 1">
+                    <option value="chemistry">Chemistry</option>
+                    <option value="math I">Math I</option>
+                    <option value="c programming">C Programming</option>
+                    <option value="enviromental science and engineering">ENVS</option>
+                    <option value="thermodynamics">Thermodynamics</option>
+                </optgroup>
+                <optgroup label="Semister 2">
+                    <option value="physics">Physics</option>
+                    <option value="math II">Math II</option>
+                    <option value="data structure and algorithim">DSA</option>
+                    <option value="cipe">CIPE</option>
+                    <option value="mechanics">Mechanics</option>
+                </optgroup>
+            </select><br><br>
+
+            <input type="checkbox" value="yes" name="confirm" id="confirm" checked> &nbsp; Subscribe to our news letter<br><br>
+        </form>
+    </div>
+
+    <div class="back">
+        <a href="../web.html">Go Back</a>
+    </div>
+</body>
+</html>
